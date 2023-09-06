@@ -1,8 +1,111 @@
-h1 {
+/* h1 {
     border: 10px dotted gold;
     border-radius: 50px;
     background-color: lime;
     text-align: center;
     box-shadow: 5px 5px gray;
     font-size: 100px;
+} */
+
+
+/* Selector universal */
+
+/* *{
+    border: 1px dashed blue;
+} */
+
+/* Selector por id */
+
+/* #link1 {
+    font-size: 20px;
+}
+
+#link6 {
+    background-color: red;
+}
+
+
+.rojo {
+    background-color: red;
+    border: 5px groove tomato;
+    border-radius: 5px;
+}
+
+.verde {
+    background-color: green;
+    border: 5px inset groove greenyellow;
+    border-radius: 5px;
+
+
+}
+
+h1.verde{
+    font-size: 50px ;
+}
+ */
+/* Buscar por atributo sin importar valor */
+
+/* [href] {
+    border-bottom: 5px solid blue;
+} */
+
+/* [lang] {
+    color: aqua;
+} */
+
+
+[href="#"] {
+    background-color: green;
+}
+
+[href*="you"] {
+    color: red;
+}
+
+[href $="mx"] {
+    color: lime;
+}
+
+[href ^="https"] {
+    border: 20px
+}
+
+#mp1 {
+    border-top: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+}
+
+main {
+    background-color: blueviolet;
+}
+
+aside {
+    background-color: gold;
+}
+
+/* footer{
+    background-color: orange;
+} */
+
+#mp1 > footer {
+    background-color: orange;
+}
+
+/* poner borde al pie de los articulos */
+
+#mp1 article > footer {
+    border: 10px double gray;
+}
+
+/* hermano */
+
+#mp1 h2 ~ article {
+    box-shadow: 10px 10px 10px palevioletred;
+}
+
+/* Hemrano Adyacente */
+
+#mp1 h2 + article, #mp1 nav, [href="#"] {
+    border-top: 5px double blue;
+
 }
